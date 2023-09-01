@@ -1,0 +1,14 @@
+{
+  "name": "kinsta",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "if-env type=server && (cd server && npm install || (cd kinsta && npm install)",
+    "server": "node .server/server.js",
+    "client": "cd kinsta && npm start"
+  },
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+ 
+ 
+}
